@@ -236,7 +236,6 @@ function ProductList() {
     textDecoration: 'none',
    }
    const handleAddToCart = (product) => {
-    console.log(product,"product");
     dispatch(addItem(product));
     setAddedToCart((prevState) => ({
        ...prevState,
