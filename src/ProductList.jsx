@@ -394,6 +394,22 @@ function ProductList() {
                       alt={plant.name}
                     />
                     <div className="product-title">{plant.name}</div>
+                    <div
+                      className="product-description"
+                      style={{ padding: "10px" }}
+                    >
+                      {plant.description}
+                    </div>
+                    <div
+                      className="product-cost"
+                      style={{
+                        color: "red",
+                        fontWeight: "bold",
+                        fontSize: "19px",
+                      }}
+                    >
+                      {plant.cost}
+                    </div>
                     <button
                       className={`product-button ${
                         addedToCart[plant.name] ? "added-to-cart" : ""
